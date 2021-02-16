@@ -62,7 +62,7 @@ namespace EquazioniLibrary.Test
         public void TestEquazioneSecondoCompleta()
         {
             double a = 1, b = 2, c = 3;
-            string valoreAspettato = "Non ci sono punti di intersezione";
+            string valoreAspettato = "Non ci sono soluzioni";
             string valoreRitorno = Equazioni.Eq2Grado(a, b, c);
             Assert.AreEqual(valoreAspettato, valoreRitorno);
         }

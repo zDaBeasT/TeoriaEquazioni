@@ -44,7 +44,7 @@ namespace EquazioniLibrary
             }
             else
             {
-                return "Non ci sono punti di intersezione";
+                return "Non ci sono soluzioni";
             }
         }
     }
