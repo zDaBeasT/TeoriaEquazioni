@@ -59,6 +59,14 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(ValoreAspettato, Risultato);
         }
         [TestMethod]
+        public void Delta1()
+        {
+            double a = 1, b = 2, c = 1;
+            double ValoreAspettato = 0;
+            double Risultato = Equazioni.Delta(a, b, c);
+            Assert.AreEqual(ValoreAspettato, Risultato);
+        }
+        [TestMethod]
         public void TestEquazioneSecondoCompleta()
         {
             double a = 1, b = 2, c = 3;
