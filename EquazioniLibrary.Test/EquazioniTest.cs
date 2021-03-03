@@ -45,9 +45,17 @@ namespace EquazioniLibrary.Test
         [TestMethod]
         public void IsDegree2()
         {
-            double a = 3, b = 2;
+            double esponente = 2;
             bool ValoreAspettato = true;
-            bool Risultato = Equazioni.IsDegree(b);
+            bool Risultato = Equazioni.IsDegree(esponente);
+            Assert.AreEqual(ValoreAspettato, Risultato);
+        }
+        [TestMethod]
+        public void IsDegree2falso()
+        {
+            double esponente = 3;
+            bool ValoreAspettato = false;
+            bool Risultato = Equazioni.IsDegree(esponente);
             Assert.AreEqual(ValoreAspettato, Risultato);
         }
         [TestMethod]

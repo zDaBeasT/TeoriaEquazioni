@@ -20,9 +20,13 @@ namespace EquazioniLibrary
             }
             return false;
         }
-        public static bool IsDegree(double c)
+        public static bool IsDegree(double esponente)
         {
-            return c == 2;
+            if (esponente != 2)
+            {
+                return false;
+            }
+            return true;
         }
         public static double Delta(double a, double b, double c)
         {
