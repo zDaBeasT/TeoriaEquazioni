@@ -75,11 +75,27 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(ValoreAspettato, Risultato);
         }
         [TestMethod]
-        public void TestEquazioneSecondoCompleta()
+        public void SoluzioniTest()
+        {
+            double a = 2, b = 4, c = 0;
+            string valoreAspettato = "Le soluzioni sono: x1 = 0; x2 = -2";
+            string valoreRitorno = Equazioni.Soluzioni(a, b, c);
+            Assert.AreEqual(valoreAspettato, valoreRitorno);
+        }
+        [TestMethod]
+        public void EquationDegree1Test()
+        {
+            double a = 2, b = 4;
+            string valoreAspettato = "Il risultato dell'equazione è: 2";
+            string valoreRitorno = Equazioni.EquationDegree1(a, b);
+            Assert.AreEqual(valoreAspettato, valoreRitorno);
+        }
+        [TestMethod]
+        public void EquationDegree2Test()
         {
             double a = 1, b = 2, c = 3;
             string valoreAspettato = "Non ci sono soluzioni";
-            string valoreRitorno = Equazioni.Eq2Grado(a, b, c);
+            string valoreRitorno = Equazioni.EquationDegree2(a, b, c);
             Assert.AreEqual(valoreAspettato, valoreRitorno);
         }
     }
