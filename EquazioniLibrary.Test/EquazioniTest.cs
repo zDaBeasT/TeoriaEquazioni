@@ -25,7 +25,7 @@ namespace EquazioniLibrary.Test
 
         }
         [TestMethod]
-        public void IsInconsistedTest()
+        public void IsInconsistedTest1()
         {
             double a = 5, b = 3;
             bool ValoreAspettato = false;
@@ -34,7 +34,7 @@ namespace EquazioniLibrary.Test
 
         }
         [TestMethod]
-        public void IsInconsistedTest1()
+        public void IsInconsistedTest()
         {
             double a = 0, b = 5;
             bool ValoreAspettato = true;
